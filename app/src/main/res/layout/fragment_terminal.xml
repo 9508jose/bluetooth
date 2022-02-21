@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        app:srcCompat="@drawable/logo" />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style_borde_editext_contenedor"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dispositivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:autoSizeTextType="uniform"
+                    android:text="Dispositivo conectado:"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.08" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style_borde_editext_contenedor"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Datos Fecha - Hora"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ettime"
+                        android:layout_width="81dp"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:editable="false"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/style_borde_editext"
+
+                        android:text="00:00:00"
+
+                        android:textColor="@color/colorPrimaryDark"
+                       />
+
+                    <Button
+                        android:id="@+id/send_hora"
+                        android:textSize="12sp"
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:text="Envia Hora"
+
+
+                        />
+
+
+                    <EditText
+                        android:id="@+id/etPlannedDate"
+                        android:layout_width="81dp"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:editable="false"
+                        android:background="@drawable/style_borde_editext"
+                        android:text="00:00:00"
+
+                        android:textColor="@color/colorPrimaryDark"
+
+                        android:textIsSelectable="false"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated" />
+
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/send_fecha"
+                        android:textSize="12sp"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:text="Envia Fecha"
+                         />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+
+                    <Button
+                        android:id="@+id/send_dis_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+
+                        android:text="Dis On-LINE"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/style_borde_editext_contenedor"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Funciones Datos"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.08" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/send_bajadatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:text="Bajar Datos" />
+
+                    <Button
+                        android:id="@+id/send_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:text="Guardar txt" />
+
+
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/send_datos_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:text="Borrar Datos"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/style_borde_editext_contenedor"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Funciones Ganancia"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.08" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/send_CalCero"
+                        android:layout_width="83dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:autoSizeTextType="uniform"
+                        android:text="Cal Cero" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/send_TpMuestra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:autoSizeTextType="uniform"
+                            android:text="Tipo de Muestra"
+                            android:textSize="7dp"
+
+
+                            />
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            style="@style/Widget.AppCompat.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/style_borde_editext_spinner"
+                            android:textAlignment="center"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/send_CalGan"
+                        android:layout_width="83dp"
+                        android:layout_height="61dp"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+
+                        android:text="Cal Ganan" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/style_borde_editext_contenedor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Desconectar Bluetooth"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.08" />
+            <ImageView
+                android:id="@+id/actualiza"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/blue_refresh" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_borde_editext_contenedor_orange"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/receive_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@color/white"
+                    android:freezesText="true"
+                    android:gravity="bottom"
+                    android:scrollbars="vertical"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="false"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

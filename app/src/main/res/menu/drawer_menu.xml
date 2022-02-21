@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/Home_main"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Comandos"></item>
+        <item
+            android:id="@+id/Vehiculos"
+            android:icon="@drawable/ic_baseline_smartphone_24"
+            android:title="Configuraciones"></item>
+    </group>
+
+
+
+
+</menu>
